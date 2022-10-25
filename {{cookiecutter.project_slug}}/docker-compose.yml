@@ -18,14 +18,14 @@ services:
     env_file:
       - .env
     ports:
-      - "8080:80"
+      - "8080:8080"
     volumes:
       - pgadmin-data:/var/lib/pgadmin
   backend:
     container_name: backend_api
     build: backend/
     ports:
-      - "80:80"
+      - "8000:8000"
   frontend:
     container_name: frontend_vue
     build: frontend/
