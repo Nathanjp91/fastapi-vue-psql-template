@@ -1,0 +1,9 @@
+{
+    "project_name": "",
+    "project_slug": "",
+    "pg_user": "postgres",
+    "pg_password": "postgres",
+    "pg_db_name": "foo",
+    "pgadmin_user": "admin@admin.com",
+    "pgadmin_password": "changeme"
+}
