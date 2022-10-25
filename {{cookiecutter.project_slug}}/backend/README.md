@@ -1,6 +1,8 @@
 # Backend Application
 
-Contains the API portion of the system
+Contains the API portion of the system.
+Uses Fastapi to serve CRUD routes.
+Database is postgres docker container, modelled and connected with sqlalchemy backend via sqlmodel, using alembic to control models in database
 
 ## Dependencies
 - python 3.10>
@@ -8,6 +10,7 @@ Contains the API portion of the system
 ## Installation
 
 ```
+poetry shell
 poetry install
 ```
 
