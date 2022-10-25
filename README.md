@@ -1,7 +1,7 @@
 # Python FastAPI Vue 3 Postgres template
 Cookiecutter based template for a python fastapi CRUD based webapp, using vue 3 + tailwind css on the frontend and postgres database
 
-## Dependancies
+## Dependencies
 - Docker
 - cookiecutter
 - python 3.10
