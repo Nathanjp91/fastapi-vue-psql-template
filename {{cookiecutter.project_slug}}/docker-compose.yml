@@ -10,7 +10,6 @@ services:
       - "8001:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
-
   pgadmin:
     container_name: pgadmin4_container
     image: dpage/pgadmin4
@@ -28,7 +27,7 @@ services:
     build: backend/
     command: uvicorn app.main:app --reload --workers 1 --host 0.0.0.0 --port 80
     volumes:
-      -./backend/app:/usr/src/app
+      - ./backend/app:/usr/src/app
     ports:
       - "8003:80"
     depends_on:
@@ -38,7 +37,6 @@ services:
     build: frontend/
     depends_on:
       - backend
-
 
 volumes:
  db-data:
