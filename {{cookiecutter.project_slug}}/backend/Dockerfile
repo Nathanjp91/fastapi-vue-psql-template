@@ -14,7 +14,7 @@ RUN apt-get update \
 
 # install python dependencies
 RUN pip install --upgrade pip
-# COPY ./app/requirements.txt . (Should be symlinked with the volume and already in working directory)
+COPY ./app/requirements.txt .
 RUN pip install -r requirements.txt
 
 # add app
