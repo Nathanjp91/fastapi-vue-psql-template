@@ -16,6 +16,3 @@ RUN apt-get update \
 RUN pip install --upgrade pip
 COPY ./app/requirements.txt .
 RUN pip install -r requirements.txt
-
-# add app
-COPY . .
