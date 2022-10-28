@@ -1,10 +1,10 @@
 {
     "project_name": "example",
     "project_slug": "{{ cookiecutter.project_name|lower }}",
+    "author": "Nathan Perkins",
     "pg_user": "postgres",
     "pg_password": "postgres",
     "pg_db_name": "foo",
     "pgadmin_user": "{{ cookiecutter.pg_user }}@{{ cookiecutter.project_slug }}.com",
-    "pgadmin_password": "changeme",
-    "name": "Nathan Perkins"
+    "pgadmin_password": "changeme"
 }
