@@ -1,6 +1,5 @@
 """ Hello World Route handler """
 
-from pytest import Session
 from fastapi import APIRouter, Depends
 from app.db import get_session
 from app.models.users import User
@@ -11,8 +10,8 @@ router = APIRouter()
 
 
 @router.get("/")
-async def hello_world(ession: AsyncSession = Depends(get_session)):
+async def hello_world(session: AsyncSession = Depends(get_session)):
     """Hello World route handler"""
-    result = await Session.execut(select(User))
+    result = await session.execute(select(User))
     users = result.scalars().all()
     return [users]
