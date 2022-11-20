@@ -6,5 +6,6 @@
     "pg_password": "postgres",
     "pg_db_name": "foo",
     "pgadmin_user": "{{ cookiecutter.pg_user }}@{{ cookiecutter.project_slug }}.com",
-    "pgadmin_password": "changeme"
+    "pgadmin_password": "changeme",
+    "_envfile_gitignore": ".env"
 }
